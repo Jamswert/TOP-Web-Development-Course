@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links and Images - Home</title>
+</head>
+<body>
+    <h1>Homepage</h1>
+
+    <!-- An <a> element is an anchor element. It is used to wrap text or
+        another HTML element into a link.
+        
+        `href` is a HTML attribute which stands for hypertext reference, it
+        is used to attribute the destination where you want your link to go to.
+        
+        `target` is another HTML attribute that is used to tell the browser where
+        to open the link. By default it's value is "_self" which opens it over the
+        current tab.
+        `rel` is another HTML attribute that is used to describe the relation between
+        the current apge and the linked document.
+            `noopener` prevents the new tab from accessing the original page, which would
+            have opened the possibilities for a phishing attack to take place.
+            `noreferrer` is the same as noopener but also prevents certain details about the
+            original apge from being passed to the new page.-->
+    <h2>Links</h2>
+    <h3>External Link</h3>
+    <a href="https://www.theodinproject.com/about" target="_blank" rel="noreferrer">About The Odin Project</a>
+    <h3>Internal Link</h3>
+    <a href="./pages/about.html">About</a>
+
+    <h2>Images</h2>
+    <!-- Instead of wrapping content, the <img> tag uess a src attribute that tells the browser where the image
+        file is located, it can embed both absolute and relative paths.
+        `src` is used to tell the browser where to find the image.
+        `alt` is used to provide tools like screen readers with a description of the image.
+        `height` and `width` are used to define custom dimensions.-->
+    <img src="./images/dog.jpg" width="320">
+</body>
+</html>
